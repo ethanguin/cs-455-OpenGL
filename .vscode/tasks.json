@@ -1,0 +1,37 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "cppbuild",
+			"label": "build-project",
+			"command": "/usr/bin/clang++",
+			"args": [
+				"-fcolor-diagnostics",
+				"-I${workspaceFolder}/include/",
+				"-L${workspaceFolder}/lib/",
+				"${workspaceFolder}/src/main.cpp",
+				"-g",
+				"${file}",
+				"glad.c",
+				"-lglfw",
+				"-framework", "Cocoa",
+				"-framework", "OpenGL",
+				"-framework", "IOKit",
+				"-framework", "CoreVideo",
+				"-o",
+				"${workspaceFolder}/build/OpenGLProject"
+			],
+			"options": {
+				"cwd": "${fileDirname}"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"detail": "compiler: /usr/bin/clang++"
+		}
+	]
+}
