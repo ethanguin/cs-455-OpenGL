@@ -8,11 +8,11 @@
                 "-fdiagnostics-color=always",
                 "-I${workspaceFolder}/include",
                 "-L${workspaceFolder}/lib",
-                "-lglfw3dll",
                 "${workspaceFolder}/src/main.cpp",
+                "-lglfw3dll",
                 "${workspaceFolder}/src/glad.c",
                 "-o",
-                "${workspaceFolder}/build/OpenGLProject.exe"
+                "${workspaceFolder}/build/OpenGLProject.exe",
             ],
             "options": {
                 "cwd": "${fileDirname}"
